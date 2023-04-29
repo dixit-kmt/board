@@ -14,8 +14,6 @@ const lato = Lato({
 
 export default function Header() {
   const { data } = useSession();
-
-  console.log(data);
   return (
     <div className="relative flex items-center">
 
@@ -50,7 +48,7 @@ export default function Header() {
         </div>
 
         <div
-          class="hidden peer-hover:flex hover:flex absolute top-[-10px] right-0
+          className="hidden peer-hover:flex hover:flex absolute top-[-10px] right-0
          p-4 rounded-lg w-max
          flex-col bg-white  z-10 mt-10"
         >
